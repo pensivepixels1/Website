@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Pensive Digital — Modern Marketing Agency</title>
+	<meta name="description" content="Pensive Digital is a cutting-edge marketing agency delivering innovative digital solutions for modern brands." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="icon" href="favicon.ico" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<a class="logo" href="#home" aria-label="Pensive Digital home">
+				<img class="logo-img" src="logo_pensive_darkbg.png" alt="Pensive Digital logo" />
+			</a>
+			<nav class="nav" aria-label="Primary">
+				<button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+					<span class="nav-toggle-bar"></span>
+					<span class="nav-toggle-bar"></span>
+					<span class="nav-toggle-bar"></span>
+				</button>
+				<ul id="primary-menu" class="nav-list">
+					<li><a href="services.html">Services</a></li>
+					<li><a href="work.html">Work</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="Pensive_Brochure.pdf" download class="brochure-download" title="Download Brochure">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+							<polyline points="7,10 12,15 17,10"/>
+							<line x1="12" y1="15" x2="12" y2="3"/>
+						</svg>
+						<span>Brochure</span>
+					</a></li>
+					<li>
+						<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+							<svg id="iconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<circle cx="12" cy="12" r="4"/>
+								<path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.07 6.07-1.41-1.41M8.34 8.34 6.93 6.93m10.14 0-1.41 1.41M8.34 15.66l-1.41 1.41"/>
+							</svg>
+							<svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+								<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+							</svg>
+							<span class="toggle-text">Theme</span>
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main id="home">
+		<section class="hero">
+			<div class="hero-video-container">
+				<video class="hero-video" autoplay muted loop playsinline>
+					<source src="hero video.mp4" type="video/mp4">
+				</video>
+				<div class="hero-overlay"></div>
+			</div>
+			<div class="hero-content">
+				<div class="container">
+					<div class="hero-text">
+						<!-- <h1 class="hero-title">
+							<span class="title-line">We create</span>
+							<span class="title-line highlight">digital experiences</span>
+							<span class="title-line">that matter</span>
+						</h1> -->
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						<p class="hero-description">Transform your brand with cutting-edge digital marketing strategies that drive real results and measurable growth.</p>
+						<div class="hero-cta">
+							<a class="btn btn-primary" href="contact.html">Start Your Project</a>
+							<a class="btn btn-secondary" href="work.html">View Our Work</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="scroll-indicator">
+				<div class="scroll-arrow"></div>
+			</div>
+		</section>
+
+		<section id="services" class="section">
+		<!-- Posters carousel: showcases recent posters before services -->
+		<section id="posters" class="section">
+			<div class="container">
+				<header class="section-head">
+					<h2>Our Posters</h2>
+					<p>Give a quick look at our recent works.</p>
+				</header>
+				<div class="poster-carousel" aria-label="Recent posters carousel">
+					<div class="carousel-track">
+						<div class="carousel-item"><img src="Samples/Botique-2.jpg" alt="Boutique poster"/></div>
+						<div class="carousel-item"><img src="Samples/Botique-3.jpg" alt="Boutique poster"/></div>
+						<div class="carousel-item"><img src="Samples/Botique-1.jpg" alt="Boutique poster"/></div>
+						<div class="carousel-item"><img src="Samples/Cafe-1.jpg" alt="Cafe poster"/></div>
+						<div class="carousel-item"><img src="Samples/Cafe-2.jpg" alt="Cafe poster"/></div>
+						<div class="carousel-item"><img src="Samples/Jewellery-1.jpg" alt="Jewellery poster"/></div>
+						<div class="carousel-item"><img src="Samples/Jewellery-2.jpg" alt="Jewellery poster"/></div>
+						<div class="carousel-item"><img src="Samples/Restuarant-1.jpg" alt="Restaurant poster"/></div>
+						<div class="carousel-item"><img src="Samples/Restuarant-2.jpg" alt="Restaurant poster"/></div>
+						<div class="carousel-item"><img src="Samples/Vivaha-1.jpg" alt="Wedding poster"/></div>
+						<!-- Newly added samples -->
+						<div class="carousel-item"><img src="Samples/Accessories-1.jpg" alt="Accessories poster"/></div>
+						<div class="carousel-item"><img src="Samples/Accessories-2.png" alt="Accessories poster"/></div>
+						<div class="carousel-item"><img src="Samples/Accessories-3.png" alt="Accessories poster"/></div>
+						<div class="carousel-item"><img src="Samples/Accessories-4.png" alt="Accessories poster"/></div>
+						<div class="carousel-item"><img src="Samples/Botique-4.png" alt="Boutique poster"/></div>
+						<div class="carousel-item"><img src="Samples/Cafe-3.png" alt="Cafe poster"/></div>
+						<div class="carousel-item"><img src="Samples/Cafe-4.png" alt="Cafe poster"/></div>
+						<div class="carousel-item"><img src="Samples/Cafe-5.png" alt="Cafe poster"/></div>
+						<div class="carousel-item"><img src="Samples/Restuarant-3.png" alt="Restaurant poster"/></div>
+						<div class="carousel-item"><img src="Samples/Vivaha-2.png" alt="Wedding poster"/></div>
+					</div>
+					<!-- Carousel navigation buttons -->
+					<button class="carousel-btn carousel-prev" aria-label="Previous posters">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+							<polyline points="15 18 9 12 15 6" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+					<button class="carousel-btn carousel-next" aria-label="Next posters">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+							<polyline points="9 18 15 12 9 6" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</section>
+			<div class="container">
+				<header class="section-head">
+					<h2>Our Services</h2>
+					<p>Comprehensive digital solutions designed to elevate your brand and drive growth</p>
+				</header>
+				<div class="services-grid">
+					<article class="service-card">
+						<div class="service-icon">
+							<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<circle cx="12" cy="12" r="3"/>
+								<path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+							</svg>
+						</div>
+						<h3>Logo & Branding Design</h3>
+						<p>Create a memorable brand identity that resonates with your audience and differentiates your business.</p>
+						<ul class="service-features">
+							<li>Logo Design & Variations</li>
+							<li>Brand Guidelines</li>
+							<li>Color Palette & Typography</li>
+						</ul>
+					</article>
+					<article class="service-card">
+						<div class="service-icon">
+							<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+								<circle cx="9" cy="7" r="4"/>
+								<path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+								<path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+							</svg>
+						</div>
+						<h3>Social Media Marketing</h3>
+						<p>Build your online presence and engage with your audience across all major social media platforms.</p>
+						<ul class="service-features">
+							<li>Content Strategy & Planning</li>
+							<li>Post Creation & Scheduling</li>
+							<li>Community Management</li>
+						</ul>
+					</article>
+					<article class="service-card">
+						<div class="service-icon">
+							<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+								<circle cx="8.5" cy="8.5" r="1.5"/>
+								<polyline points="21,15 16,10 5,21"/>
+							</svg>
+						</div>
+						<h3>Poster / Ad Design</h3>
+						<p>Eye-catching visual designs for posters, advertisements, and promotional materials that capture attention.</p>
+						<ul class="service-features">
+							<li>Print & Digital Posters</li>
+							<li>Social Media Ads</li>
+							<li>Banner Design</li>
+						</ul>
+					</article>
+					<article class="service-card">
+						<div class="service-icon">
+							<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+							</svg>
+						</div>
+						<h3>Marketing Strategy & Planning</h3>
+						<p>Data-driven marketing strategies tailored to your business goals and target audience.</p>
+						<ul class="service-features">
+							<li>Market Analysis</li>
+							<li>Competitor Research</li>
+							<li>Campaign Planning</li>
+						</ul>
+					</article>
+					<article class="service-card">
+						<div class="service-icon">
+							<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+								<line x1="8" y1="21" x2="16" y2="21"/>
+								<line x1="12" y1="17" x2="12" y2="21"/>
+							</svg>
+						</div>
+						<h3>Content Creation / Reels</h3>
+						<p>Engaging video content and reels that boost your social media presence and drive engagement.</p>
+						<ul class="service-features">
+							<li>Video Scripting & Storyboarding</li>
+							<li>Reel Creation & Editing</li>
+							<li>Motion Graphics</li>
+						</ul>
+					</article>
+					<article class="service-card">
+						<div class="service-icon">
+							<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+								<polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+								<line x1="12" y1="22.08" x2="12" y2="12"/>
+							</svg>
+						</div>
+						<h3>Web Development</h3>
+						<p>Modern, responsive websites and web applications built with cutting-edge technologies.</p>
+						<ul class="service-features">
+							<li>Responsive Web Design</li>
+							<li>E-commerce Solutions</li>
+							<li>Performance Optimization</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="section alt">
+			<div class="container">
+				<header class="section-head">
+					<h2>Ready to grow?</h2>
+					<p>Tell us about your goals. We’ll come prepared to add value on the first call.</p>
+				</header>
+				<div class="contact-content">
+					<div class="contact-info">
+						<div class="contact-item">
+							<div class="contact-icon">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+								</svg>
+							</div>
+							<div>
+								<h3>Phone</h3>
+								<p>+1 (555) 123-4567</p>
+							</div>
+						</div>
+					</div>
+					<form class="contact-form" name="contact" method="POST" data-netlify="true">
+						<input type="hidden" name="form-name" value="contact" />
+						<div class="form-row">
+							<label>
+								<span>Name</span>
+								<input name="name" type="text" required />
+							</label>
+							<label>
+								<span>Email</span>
+								<input name="email" type="email" required />
+							</label>
+						</div>
+						<label>
+							<span>Company</span>
+							<input name="company" type="text" />
+						</label>
+						<label>
+							<span>What do you want to achieve?</span>
+							<textarea name="message" rows="5" required></textarea>
+						</label>
+						<button class="btn btn-primary" type="submit">Request a Strategy Call</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-brand">
+					<a class="logo" href="#home"><img class="logo-img" src="logo_pensive_darkbg.png" alt="Pensive Digital logo" /></a>
+					<p>Creating digital experiences that drive results and inspire growth.</p>
+					<div class="social-links">
+                        <a href="https://www.instagram.com/pensivepixels_1/" aria-label="Instagram" target="_blank" rel="noopener">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+								<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+							</svg>
+						</a>
+						<a href="https://www.facebook.com/profile.php?id=61582783380491&ref=fb_bidir_ig_profile_ac" aria-label="Facebook" target="_blank" rel="noopener">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+								<path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 5.04 3.66 9.22 8.44 9.95v-7.05H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.25.2 2.25.2v2.48h-1.27c-1.25 0-1.64.78-1.64 1.58v1.9h2.79l-.45 2.9h-2.34v7.05C18.34 21.29 22 17.11 22 12.07z"/>
+							</svg>
+						</a>
+						<a href="mailto:pensivepixels1@gmail.com" aria-label="Email">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+								<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+								<polyline points="22,6 12,13 2,6"/>
+							</svg>
+						</a>
+						<a href="tel:+919014895213" aria-label="Phone">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+								<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer-links">
+					<div class="footer-column">
+						<h4>Services</h4>
+						<ul>
+							<li><a href="services.html">Logo & Branding</a></li>
+							<li><a href="services.html">Social Media Marketing</a></li>
+							<li><a href="services.html">Web Development</a></li>
+							<li><a href="services.html">Content Creation</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h4>Company</h4>
+						<ul>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="work.html">Our Work</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h4>Resources</h4>
+						<ul>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms of Service</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; <span id="year"></span> Pensive Digital. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
