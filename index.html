@@ -249,11 +249,35 @@
 							</div>
 							<div>
 								<h3>Phone</h3>
-								<p>+1 (555) 123-4567</p>
+								<p>+91 90148 95213</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<div class="contact-icon">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+									<polyline points="22,6 12,13 2,6"/>
+								</svg>
+							</div>
+							<div>
+								<h3>Email</h3>
+								<p><a href="mailto:pensivepixels1@gmail.com">pensivepixels1@gmail.com</a></p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<div class="contact-icon">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<circle cx="12" cy="12" r="10"/>
+									<polyline points="12,6 12,12 16,14"/>
+								</svg>
+							</div>
+							<div>
+								<h3>Business Hours</h3>
+								<p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
 							</div>
 						</div>
 					</div>
-					<form class="contact-form" name="contact" method="POST" data-netlify="true">
+					<!-- <form class="contact-form" name="contact" method="POST" data-netlify="true">
 						<input type="hidden" name="form-name" value="contact" />
 						<div class="form-row">
 							<label>
@@ -274,7 +298,102 @@
 							<textarea name="message" rows="5" required></textarea>
 						</label>
 						<button class="btn btn-primary" type="submit">Request a Strategy Call</button>
+					</form> -->
+					<form class="contact-form">
+						<div class="form-row">
+							<label>
+								<span>Name</span>
+								<input name="name" type="text" required />
+							</label>
+							<label>
+								<span>Email</span>
+								<input name="email" type="email" required />
+							</label>
+						</div>
+						<label>
+							<span>Company</span>
+							<input name="company" type="text" />
+						</label>
+						<label>
+							<span>What do you want to achieve?</span>
+							<textarea name="message" rows="5" required></textarea>
+						</label>
+						<button class="btn btn-primary" type="submit">Request a Strategy Call</button>
 					</form>
+
+<!-- <script>
+document.getElementById("homeForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const formData = {
+    page: "Home Page",
+    name: e.target.name.value,
+    email: e.target.email.value,
+    company: e.target.company.value,
+    message: e.target.message.value
+  };
+
+  const response = await fetch("https://script.google.com/macros/s/AKfycbxzLlB8tFlMGSWRG0oqWlDyidE0Tynnye62XZvZc84A8lvbaeY2vCSG7TlKWwYSUV9J/exec", {
+    method: "POST",
+    body: JSON.stringify(formData),
+    headers: { "Content-Type": "application/json" }
+  });
+
+  if (response.ok) {
+    alert("Thank you! Your message has been sent successfully.");
+    e.target.reset();
+  } else {
+    alert("There was an issue submitting your form. Please try again.");
+  }
+});
+</script> -->
+
+<script>
+// Form handling with Google Sheets integration
+document.querySelector(".contact-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const formData = {
+        page: "Home Page",
+        name: e.target.name.value,
+        email: e.target.email.value,
+        company: e.target.company.value,
+        message: e.target.message.value
+    };
+
+    const formSuccess = document.createElement('div');
+    formSuccess.className = 'form-success-message';
+    formSuccess.style.cssText = 'position: fixed; bottom: 20px; right: 20px; background-color: #10b981; color: white; padding: 12px 24px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: none; z-index: 1000;';
+    document.body.appendChild(formSuccess);
+
+    try {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbxzLlB8tFlMGSWRG0oqWlDyidE0Tynnye62XZvZc84A8lvbaeY2vCSG7TlKWwYSUV9J/exec", {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData)
+        });
+
+        formSuccess.textContent = '✅ Thank you! Your message has been sent.';
+        formSuccess.style.display = 'block';
+        setTimeout(() => {
+            formSuccess.style.display = 'none';
+            formSuccess.remove();
+        }, 3000);
+        e.target.reset();
+    } catch (error) {
+        formSuccess.textContent = '❌ Error submitting form. Please try again.';
+        formSuccess.style.backgroundColor = '#ef4444';
+        formSuccess.style.display = 'block';
+        setTimeout(() => {
+            formSuccess.style.display = 'none';
+            formSuccess.remove();
+        }, 3000);
+        console.error("Form submission error:", error);
+    }
+});
+</script>
+
 				</div>
 			</div>
 		</section>
